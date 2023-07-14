@@ -38,7 +38,7 @@ defmodule Plaid.Sandbox do
               request_id: nil
 
     def create_processor_token(params, config \\ %{}) do
-      request_operation("sandbox/public_token/create", params, config)
+      request_operation("sandbox/processor_token/create", params, config)
     end
 
     defp request_operation(endpoint, params, config) do
