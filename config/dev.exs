@@ -1,4 +1,4 @@
 import Config
 
 config :plaid,
-  root_uri: "https://development.plaid.com/"
+  root_uri: "https://sandbox.plaid.com/"
