@@ -33,13 +33,15 @@ defmodule Plaid.Mixfile do
       {:hackney, "~> 1.18"},
       {:poison, "~> 5.0"},
       {:jason, "~> 1.4"},
+      {:ssl_verify_fun, "~> 1.1.7", manager: :rebar3, override: true},
       {:bypass, "~> 2.1", only: [:test]},
       {:credo, "~> 1.6", only: [:dev], runtime: false},
       {:excoveralls, "~> 0.16", only: [:test]},
       {:ex_doc, ">= 0.0.0", only: [:dev], runtime: false},
       {:dialyxir, "~> 1.2", only: [:dev], runtime: false},
       {:telemetry, "~> 1.2"},
-      {:mox, "~> 1.0", only: :test}
+      {:mox, "~> 1.0", only: :test},
+      {:dotenv_parser, "~> 2.0", only: [:dev, :test]},
     ]
   end
 

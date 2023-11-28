@@ -30,3 +30,6 @@ plaid-*.tar
 .vscode
 *.iml
 .idea/*
+
+.env
+.tool-versions
