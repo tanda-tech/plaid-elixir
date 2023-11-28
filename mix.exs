@@ -33,7 +33,7 @@ defmodule Plaid.Mixfile do
       {:hackney, "~> 1.18"},
       {:poison, "~> 5.0"},
       {:jason, "~> 1.4"},
-      {:ssl_verify_fun, "~> 1.1.7", manager: :rebar3, override: true},
+      {:ssl_verify_fun, "~> 1.1.7", only: [:dev, :test], manager: :rebar3, override: true},
       {:bypass, "~> 2.1", only: [:test]},
       {:credo, "~> 1.6", only: [:dev], runtime: false},
       {:excoveralls, "~> 0.16", only: [:test]},
